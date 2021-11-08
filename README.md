@@ -6,17 +6,17 @@
 ## Objective and hypotheis
 
 ### Objective
-The objective of this proyect is learn to combine various types of tools in order o get insightfull data, from a dataset and APIs.
+The objective of this proyect is learn to combine various types of tools in order to get insightfull data, from a dataset and APIs.
 
 ### Hyphothesis:
-The better puncuation a city has in a quality of life index, the better it ill be positioned among the worldwide smart-city index. On the contrary, those that have worse life quality, would stand out the ranking.
+The better puncuation a city has in a Life Quality index, the better it will be positioned among the worldwide Smart City index. On the contrary, those that have worse life quality, would stand at the bottom of the ranking.
 
 ## Smart Cities Index Data from Kaggle
 
 In order to get the data, I have used a Kaggle dataset based on a recopilation of globally-recognized indexes (formalized for the evaluation of Smart City initiatives). for the year 2020.
 Data available at: [Smart City Index](https://www.kaggle.com/magdamonteiro/smart-cities-index-datasets)
 
-This dataset contains several columns describing smart cities index around the world in 2020. This file contains 102 columns, which are those included in the smart 2020 worldwide smart-city index, and 10 columns where we can find the smart city name, its country and the differernt indexes based on movility, environment, government,economy,living and people.
+This dataset contains several columns describing the Smart City worldwide index in 2020. This file contains 102 columns, which are those included in the 2020 worldwide Smart City index, and 10 columns where we can find the smart city name, its country and the differernt indexes based on movility, environment, government,economy,living and people.
 
 ## API: Continents
 This API provides information about cities and their continents. This will allow us to go further on our data and check which continents are more developed, in terms of smart cities.
@@ -24,7 +24,7 @@ API available at: [API Continents](https://rapidapi.com/referential/api/referent
 )  
 
 ## API: Life Quality
-The first API used, provides scores for housing, cost of living, startups, venture capital, travel connectivity, commute, business freedom, safety, healthcare, education, environmental quality, economy, taxation and internet access. All the latter information is summed in the "teleport_city_score", which will be added to the dataset in order to enrich the data.
+ThIS API, provides scores for housing, cost of living, startups, venture capital, travel connectivity, commute, business freedom, safety, healthcare, education, environmental quality, economy, taxation and internet access. All the latter information is summed up in the "teleport_city_score", which will be added to the dataset as "Life_Quality" in order to enrich the data.
 
 API available at: [Api Life Quality](https://developers.teleport.org/api/)
 
