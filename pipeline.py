@@ -1,4 +1,3 @@
-from cleaning_apis import load_csv_2
 from src.cleaning_functions import *
 
 #Cleaning
@@ -19,7 +18,31 @@ smart = load_csv_2()
 
 smart = replace_country()
 
-#AQUI HAY QUE METER LA LLAMADA A LA API??????
+#API CONTINENTS
+import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
+token = os.getenv("token")
+
+url = "https://referential.p.rapidapi.com/v1/country"
+
+querystring = {"fields":"currency,currency_num_code,currency_code,continent_code,currency,iso_a3,dial_code"}
+
+headers = {
+    'x-rapidapi-host': "referential.p.rapidapi.com",
+    'x-rapidapi-key': token
+    }
+
+response = requests.request("GET", url, headers=headers, params=querystring)
+
+def continent(country):
+    for dicc in response.json():
+        if country == "China":
+            return "AS"
+        elif country == dicc["value"]:
+            return dicc["continent_code"]
+
 
 smart["Continent"] = smart["Country"].apply(continent)
 
@@ -46,3 +69,7 @@ for i in range (len(cities)):
     dic_quality.update({cities[i]:scores[i]})
 
 smart["Life_Quality"]= smart["City"].map(dic_quality)
+
+download_2 ()
+
+
