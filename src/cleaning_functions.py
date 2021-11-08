@@ -11,17 +11,37 @@ import os
 # Notebook: 1.Cleaning Smart Cities:
 
 def load_csv():
+    """
+    This function loads the csv file
+    Arggs: cdv
+    Returns: open the csv
+    """
     return pd.read_csv("Data/Smart_City_index.csv",encoding = "utf-8")
 
 df_smart = load_csv()
 
 def rename_columns (dict_rename):
+    """
+    This function renames columns.
+    Arggs: dicctionaty with rename columns.
+    Returns: renamed columns
+    """
     return df_smart.rename(columns=dict_rename, inplace=True)
 
 def drop_columns ():
+    """
+    This function drops columns.
+    Arggs: columns to be droppped.
+    Returns: new dataframe
+    """
     return df_smart.drop(["Id", "SmartCity_Index_relative_Edmonton"], axis=1, inplace=True)
 
 def download ():
+    """
+    This function downloads the data.
+    Arggs: csv.
+    Returns: data
+    """
     df_smart.to_csv("Data/clean_smart.csv")
 
 
