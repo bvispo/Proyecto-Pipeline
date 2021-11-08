@@ -16,6 +16,8 @@ The better puncuation a city has in a quality of life index, the better it ill b
 In order to get the data, I have used a Kaggle dataset based on a recopilation of globally-recognized indexes (formalized for the evaluation of Smart City initiatives). for the year 2020.
 Data available at: https://www.kaggle.com/magdamonteiro/smart-cities-index-datasets
 
+[link](https://www.kaggle.com/magdamonteiro/smart-cities-index-datasets)
+
 This dataset contains several columns describing smart cities index around the world in 2020. This file contains 102 columns, which are those included in the smart 2020 worldwide smart-city index, and 10 columns where we can find the smart city name, its country and the differernt indexes based on movility, environment, government,economy,living and people.
 
 ## Alt-API-Continents
