@@ -36,14 +36,7 @@ headers = {
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
-def continent(country):
-    for dicc in response.json():
-        if country == "China":
-            return "AS"
-        elif country == dicc["value"]:
-            return dicc["continent_code"]
-
-
+continent ()
 smart["Continent"] = smart["Country"].apply(continent)
 
 #cómo hacer esto de una?
@@ -53,7 +46,9 @@ smart["Continent"] = smart["Continent"].str.replace("EU", "Europe")
 smart["Continent"] = smart["Continent"].str.replace("AS", "Asia")
 
 #API LIFE QUALITY
-cities = smart["City"] = smart["City"].apply(cf.lowercase)
+
+lowercase ()
+cities = smart["City"] = smart["City"].apply(lowercase)
 
 scores =[]
 for city in cities:
