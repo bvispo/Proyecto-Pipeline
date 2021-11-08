@@ -1,5 +1,8 @@
 # Proyect-Pipeline
 
+
+![foto](https://github.com/bvispo/Proyecto-Pipeline/blob/main/images/smartcity.jpg)
+
 ## Alt-Objective and hypotheis
 
 ### Objective
@@ -17,15 +20,19 @@ This dataset contains several columns describing smart cities index around the w
 
 ## Alt-API-Continents
 This API provides information about cities and their continents. This will allow us to go further on our data and check which continents are more developed, in terms of smart cities.
+API available at: https://rapidapi.com/referential/api/referential/ 
 
 
 ## Alt-API-Life Quality
 The first API used, provides scores for housing, cost of living, startups, venture capital, travel connectivity, commute, business freedom, safety, healthcare, education, environmental quality, economy, taxation and internet access. All the latter information is summed in the "teleport_city_score", which will be added to the dataset in order to enrich the data.
 
+API available at: https://developers.teleport.org/api/
+
 
 
 ## Results
 
+The Life Quality does infer in the position the city has on the Smart City worldwide index.
 
 
 ## Libraries
